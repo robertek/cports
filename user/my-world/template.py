@@ -1,5 +1,5 @@
 pkgname = "my-world"
-pkgver = "0.2"
+pkgver = "0.3"
 pkgrel = 0
 build_style = "meta"
 pkgdesc = "Robertek's package selection"
@@ -78,6 +78,7 @@ def _(self):
             "lsof",
             "nodejs",
             "nvme-cli",
+            "picom",
             "powertop",
             "ripgrep",
             "screen",
