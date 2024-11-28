@@ -1,5 +1,5 @@
 pkgname = "my-world"
-pkgver = "0.3"
+pkgver = "0.4"
 pkgrel = 0
 build_style = "meta"
 pkgdesc = "Robertek's package selection"
@@ -90,6 +90,7 @@ def _(self):
             "vim",
             "xlsclients",
             "yt-dlp",
+            "zoxide",
     ]
     return []
 
@@ -98,6 +99,8 @@ def _(self):
     self.subdesc = "development tools"
     self.depends = [
             "android-tools",
+            "bmake",
+            "clang",
             "ctags",
             "gdb",
             "github-cli",
@@ -126,6 +129,7 @@ def _(self):
             "!base-full-fonts", # cjk fonts not needed
             "fonts-dejavu",
             "fonts-liberation",
+            "fonts-nerd-hack",
     ]
     return []
 
@@ -156,9 +160,7 @@ def _(self):
             "ark",
             "gwenview",
             "kalk",
-            "kate",
             "kdeconnect",
-            "ktorrent",
             "okular",
             "skanlite",
             "spectacle",
