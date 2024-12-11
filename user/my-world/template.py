@@ -1,5 +1,5 @@
 pkgname = "my-world"
-pkgver = "0.4"
+pkgver = "0.5"
 pkgrel = 0
 build_style = "meta"
 pkgdesc = "Robertek's package selection"
@@ -22,6 +22,7 @@ def _(self):
             "linux-lts-zfs-bin",
             "tlp",
             "zfs",
+            "zrepl",
             "zsh",
     ]
     return []
@@ -99,13 +100,18 @@ def _(self):
     self.subdesc = "development tools"
     self.depends = [
             "android-tools",
-            "bmake",
+            "cargo",
             "clang",
+            "cmake",
             "ctags",
             "gdb",
             "github-cli",
+            "gmake",
+            "libgcc-chimera",
             "openssl-devel",
             "pkgconf",
+            "rust-analyzer",
+            "rust-clippy",
             "udev-devel",
     ]
     return []
@@ -141,7 +147,6 @@ def _(self):
             "dolphin-plugins",
             "ffmpegthumbnailer", # video thumbnails
             "kinfocenter",
-            "!mesa-vulkan",
             "plasma-desktop",
             "!plasma-desktop-accessibility-meta",
             "!plasma-desktop-apps-meta",
